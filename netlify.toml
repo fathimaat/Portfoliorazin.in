@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/sitemap.xml"
+to = "/public/sitemap.xml" # Change to your correct path
+status = 200
