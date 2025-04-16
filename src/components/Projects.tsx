@@ -3,14 +3,15 @@ import { Github } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Tech Quiz',
-    description: 'Challenge yourself with our interactive quiz, compete with others, and expand your understanding of technology.',
-    image: 'https://razin.imgix.net/Screenshot%202025-02-27%20224802.png',
+    title: "Zeba's Portfolio",
+    description: 'A sleek and modern portfolio site showcasing web projects, designed for speed, responsiveness, and clarity.',
+    image: 'https://razin.imgix.net/67ffb9bc5304d7311b75ec3f.jpg', 
     type: 'PROJECT',
-    link: 'https://quiztech.web.app'
+    link: 'https://zebakk.web.app'
+    
   },
   {
-    title: 'Arshad Khader Website',
+    title: "Arshad Khader's Portfolio",
     description: ' A clean, professional website designed for Arshad Khader, showcasing his background and initiatives.',
     image: 'https://razin.imgix.net/arshad.png?auto=format&fit=crop&q=80&w=1200',
     type: 'PORTFOLIO',
@@ -57,8 +58,8 @@ export function Projects() {
                 {project.link && project.link !== '#' && (
                   <a 
                     href={project.link} 
-                    target={project.link.endsWith('.razin.in') ? '_blank' : '_self'} 
-                    rel={project.link.endsWith('.razin.in') ? 'noopener noreferrer' : undefined} 
+                    target="_blank" 
+                    rel="noopener noreferrer"                    
                     className="inline-block px-6 py-3 border border-white hover:bg-white hover:text-black transition-colors"
                   >
                     LIVE
