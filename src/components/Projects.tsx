@@ -6,7 +6,7 @@ const projects = [
     title: "Zeba's Portfolio",
     description: 'A sleek and modern portfolio site showcasing web projects, designed for speed, responsiveness, and clarity.',
     image: 'https://razin.imgix.net/121.png', 
-    type: 'PROJECT',
+    type: 'PORTFOLIO',
     link: 'https://zebakk.web.app'
     
   },
