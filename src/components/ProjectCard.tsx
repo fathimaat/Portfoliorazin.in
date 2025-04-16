@@ -26,8 +26,20 @@ export function ProjectCard({
         className="w-full h-48 object-cover"
       />
       <div className="p-6">
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600 mb-4">{description}</p>
+        {/* Make the title clickable */}
+        <h3 className="text-xl font-semibold mb-2">
+          <a 
+            href={liveUrl || 'https://www.google.com'} // Fallback to google.com if no liveUrl
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-blue-600 hover:underline"
+          >
+            {title}
+          </a>
+        </h3>
+        {/* Hide description on mobile, show it on larger screens */}
+        <p className="text-gray-600 mb-4 hidden md:block">{description}</p>
+
         <div className="flex flex-wrap gap-2 mb-4">
           {technologies.map((tech) => (
             <span 

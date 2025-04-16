@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Zeba's Portfolio",
     description: 'A sleek and modern portfolio site showcasing web projects, designed for speed, responsiveness, and clarity.',
-    image: 'https://razin.imgix.net/67ffb9bc5304d7311b75ec3f.jpg', 
+    image: 'https://razin.imgix.net/121.png', 
     type: 'PROJECT',
     link: 'https://zebakk.web.app'
     
@@ -53,8 +53,19 @@ export function Projects() {
               />
               <div className="absolute inset-0 bg-black bg-opacity-80 p-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <span className="text-sm">{project.type}</span>
-                <h3 className="text-3xl font-bold mt-2 mb-4">{project.title}</h3>
-                <p className="text-lg mb-8">{project.description}</p>
+                {/* Make title clickable */}
+                <h3 className="text-3xl font-bold mt-2 mb-4">
+                  <a 
+                    href={project.link || 'https://www.google.com'} // Fallback to google.com if no link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white hover:underline"
+                  >
+                    {project.title}
+                  </a>
+                </h3>
+                {/* Hide description on mobile */}
+                <p className="text-lg mb-8 hidden md:block">{project.description}</p>
                 {project.link && project.link !== '#' && (
                   <a 
                     href={project.link} 
