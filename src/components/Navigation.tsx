@@ -10,7 +10,7 @@ export function Navigation() {
     const href = e.currentTarget.getAttribute('href');
     if (href) {
       if (href === '#') {
-        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top if 'Home' is clicked
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         const element = document.querySelector(href);
         if (element) {
@@ -42,6 +42,7 @@ export function Navigation() {
                 <a href="#" onClick={handleClick} className="hover:text-gray-600">Home</a>
                 <a href="#about" onClick={handleClick} className="hover:text-gray-600">About</a>
                 <a href="#projects" onClick={handleClick} className="hover:text-gray-600">Projects</a>
+                <a href="#certificates" onClick={handleClick} className="hover:text-gray-600">Certificates</a>
               </div>
             </div>
           </div>
@@ -51,6 +52,7 @@ export function Navigation() {
           <a href="#" onClick={handleClick} className="hover:text-gray-600">Home</a>
           <a href="#about" onClick={handleClick} className="hover:text-gray-600">About</a>
           <a href="#projects" onClick={handleClick} className="hover:text-gray-600">Projects</a>
+          <a href="#certificates" onClick={handleClick} className="hover:text-gray-600">Certificates</a>
         </div>
 
         <Logo />
