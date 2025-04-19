@@ -11,7 +11,7 @@ export function Footer() {
           <Logo />
         </div>
         
-        <div className="grid md:grid-cols-3 gap-16 text-lg">
+        <div className="grid md:grid-cols-2 gap-16 text-lg">
           <div>
             <h3 className="text-neutral-500 mb-8">SECTIONS</h3>
             <ul className="space-y-4">
@@ -19,18 +19,12 @@ export function Footer() {
               <li><a href="#projects" className="hover:text-neutral-400">Projects</a></li>
               <li><a href="#about" className="hover:text-neutral-400">About Me</a></li>
               <li><a href="#contact" className="hover:text-neutral-400">Contact Me</a></li>
+              <li><a href="#certificates" className="hover:text-neutral-400">Certificates</a></li>
+
             </ul>
           </div>
           
-          <div>
-            <h3 className="text-neutral-500 mb-8">SKILLS / TOOLS</h3>
-            <ul className="space-y-4">
-              <li>React</li>
-              <li>TypeScript</li>
-              <li>Node.js</li>
-              <li>Python</li>
-            </ul>
-          </div>
+          
           
           <div>
             <h3 className="text-neutral-500 mb-8">CONNECT WITH ME</h3>
