@@ -141,7 +141,7 @@ export function Certificates() {
     <section id="certificates" className="py-32 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-16">
-          <h2 className="text-6xl text-white">CERTIFICATES</h2>
+          <h2 className="font-['Be_Vietnam'] font-semibold text-[40px] leading-[100%] tracking-[-0.09em] text-white">CERTIFICATES</h2>
           <Award size={48} className="text-white" />
         </div>
         

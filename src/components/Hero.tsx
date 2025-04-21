@@ -2,14 +2,14 @@ import React from 'react';
 
 export function Hero() {
   return (
-    <div className="min-h-screen flex flex-col justify-center px-6 pt-20">
+    <div className="min-h-screen flex flex-col justify-center px-8">
       <div className="max-w-7xl mx-auto w-full">
-        <h1 className="text-[clamp(2rem,8vw,5.5rem)] font-bold leading-none mb-4">
+        <h1 className="font-['Be_Vietnam'] font-semibold text-[100px] leading-[79%] mb-4">
           RAZIN
           <br />
           RAYEES
         </h1>
-        <p className="text-[clamp(1.5rem,4vw,2.5rem)] max-w-3xl leading-tight mb-12">
+        <p className="font-['Be_Vietnam'] font-semibold text-[40px] leading-[93%] max-w-3xl mb-12">
           CS STUDENT PASSIONATE ABOUT PUTTING MY SKILLS TO USE
         </p>
         <div>

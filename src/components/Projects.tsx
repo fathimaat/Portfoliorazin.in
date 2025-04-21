@@ -8,7 +8,6 @@ const projects = [
     image: 'https://razin.imgix.net/121.png', 
     type: 'PORTFOLIO',
     link: 'https://zebakk.web.app'
-    
   },
   {
     title: "Arshad Khader's Portfolio",
@@ -38,7 +37,7 @@ export function Projects() {
     <section id="projects" className="py-32 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-16">
-          <h2 className="text-6xl">PROJECTS</h2>
+          <h2 className="font-['Be_Vietnam'] font-semibold text-[40px] leading-[100%]">PROJECTS</h2>
           <a href="https://github.com/razinrayees" target="_blank" rel="noopener noreferrer">
             <Github size={48} />
           </a>
@@ -53,10 +52,9 @@ export function Projects() {
               />
               <div className="absolute inset-0 bg-black bg-opacity-80 p-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <span className="text-sm">{project.type}</span>
-                {/* Make title clickable */}
                 <h3 className="text-3xl font-bold mt-2 mb-4">
                   <a 
-                    href={project.link || 'https://www.google.com'} // Fallback to google.com if no link
+                    href={project.link || 'https://www.google.com'}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:underline"
@@ -64,7 +62,6 @@ export function Projects() {
                     {project.title}
                   </a>
                 </h3>
-                {/* Hide description on mobile */}
                 <p className="text-lg mb-8 hidden md:block">{project.description}</p>
                 {project.link && project.link !== '#' && (
                   <a 

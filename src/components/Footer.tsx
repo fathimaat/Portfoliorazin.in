@@ -13,21 +13,38 @@ export function Footer() {
         
         <div className="grid md:grid-cols-2 gap-16 text-lg">
           <div>
-            <h3 className="text-neutral-500 mb-8">SECTIONS</h3>
+            <h3 className="font-['Be_Vietnam'] font-semibold text-[14px] leading-[79%] tracking-[0.165em] text-neutral-500 mb-8">SECTIONS</h3>
             <ul className="space-y-4">
-              <li><a href="#" className="hover:text-neutral-400">Home</a></li>
-              <li><a href="#projects" className="hover:text-neutral-400">Projects</a></li>
-              <li><a href="#about" className="hover:text-neutral-400">About Me</a></li>
-              <li><a href="#contact" className="hover:text-neutral-400">Contact Me</a></li>
-              <li><a href="#certificates" className="hover:text-neutral-400">Certificates</a></li>
-
+              <li>
+                <a href="#" className="font-['Be_Vietnam'] font-semibold text-[40px] leading-[100%] tracking-[-0.09em] hover:text-neutral-400">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#projects" className="font-['Be_Vietnam'] font-semibold text-[40px] leading-[100%] tracking-[-0.09em] hover:text-neutral-400">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="font-['Be_Vietnam'] font-semibold text-[40px] leading-[100%] tracking-[-0.09em] hover:text-neutral-400">
+                  About Me
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="font-['Be_Vietnam'] font-semibold text-[40px] leading-[100%] tracking-[-0.09em] hover:text-neutral-400">
+                  Contact Me
+                </a>
+              </li>
+              <li>
+                <a href="#certificates" className="font-['Be_Vietnam'] font-semibold text-[40px] leading-[100%] tracking-[-0.09em] hover:text-neutral-400">
+                  Certificates
+                </a>
+              </li>
             </ul>
           </div>
           
-          
-          
           <div>
-            <h3 className="text-neutral-500 mb-8">CONNECT WITH ME</h3>
+            <h3 className="font-['Be_Vietnam'] font-semibold text-[14px] leading-[79%] tracking-[0.165em] text-neutral-500 mb-8">CONNECT WITH ME</h3>
             <div className="flex gap-6">
               <a href="mailto:razinrayees@outlook.com" className="hover:text-neutral-400">
                 <Mail size={24} />

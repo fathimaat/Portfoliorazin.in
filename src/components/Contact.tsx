@@ -34,7 +34,7 @@ export function Contact() {
 
       if (response.ok) {
         setSubmissionStatus('Thank you for your message! I will get back to you soon.');
-        setFormData({ name: '', email: '', message: '' }); // Reset form fields
+        setFormData({ name: '', email: '', message: '' });
       } else {
         setSubmissionStatus('Something went wrong, please try again.');
       }
@@ -48,11 +48,11 @@ export function Contact() {
   return (
     <section id="contact" className="py-32 px-6 bg-black text-white">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-6xl mb-8">CONTACT</h2>
-        <p className="text-3xl mb-16">
+        <h2 className="font-['Be_Vietnam'] font-semibold text-[40px] leading-[100%] tracking-[-0.09em] mb-8">CONTACT</h2>
+        <p className="font-['Be_Vietnam'] font-normal text-[40px] leading-[109%] mb-16">
           Interested in working together?
           <br />
-          Let's connect via email or LinkedIn
+          Let's connect via <span className="font-bold">email</span> or <span className="font-bold">LinkedIn</span>
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-8">

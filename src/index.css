@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,11 +6,51 @@
 
 @layer base {
   html {
-    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-family: 'Be Vietnam', system-ui, sans-serif;
     scroll-behavior: smooth;
   }
   
   body {
     @apply antialiased bg-white text-black;
+    cursor: none;
   }
+
+  a, button {
+    cursor: none !important;
+  }
+}
+
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+.custom-cursor.hover {
+  width: 40px;
+  height: 40px;
+}
+
+.custom-cursor.on-dark {
+  background: white;
+}
+
+.cursor-dot {
+  width: 4px;
+  height: 4px;
+  background: black;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s, background-color 0.3s;
+}
+
+.cursor-dot.on-dark {
+  background: white;
 }

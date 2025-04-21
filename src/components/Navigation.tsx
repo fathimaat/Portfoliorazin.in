@@ -29,14 +29,13 @@ export function Navigation() {
     <nav className="fixed w-full top-0 bg-white z-50 px-6 py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <button 
-          className="lg:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
         {isMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-white border-b border-gray-200 py-4 lg:hidden">
+          <div className="absolute top-full left-0 w-full bg-white border-b border-gray-200 py-4">
             <div className="max-w-7xl mx-auto px-6">
               <div className="flex flex-col space-y-4">
                 <a href="#" onClick={handleClick} className="hover:text-gray-600">Home</a>
@@ -47,13 +46,6 @@ export function Navigation() {
             </div>
           </div>
         )}
-
-        <div className="hidden lg:flex space-x-8">
-          <a href="#" onClick={handleClick} className="hover:text-gray-600">Home</a>
-          <a href="#about" onClick={handleClick} className="hover:text-gray-600">About</a>
-          <a href="#projects" onClick={handleClick} className="hover:text-gray-600">Projects</a>
-          <a href="#certificates" onClick={handleClick} className="hover:text-gray-600">Certificates</a>
-        </div>
 
         <Logo />
 
