@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
-import { Document, Page } from '@react-pdf/renderer';
+import { Document, Page, pdfjs } from 'react-pdf';
 import { Download, ArrowLeft, ChevronLeft, ChevronRight, Minus, Plus } from 'lucide-react';
 import { Logo } from './Logo';
 
-// Initialize PDF.js worker
-import { pdfjs } from 'react-pdf';
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.js',
-  import.meta.url,
-).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 export function Resume() {
   const [numPages, setNumPages] = useState<number>(0);
