@@ -7,7 +7,7 @@ import { Projects } from './components/Projects';
 import { Certificates } from './components/Certificates';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
-import { Resume } from './pages/Resume';
+import { Resume } from './components/Resume';
 
 function App() {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
