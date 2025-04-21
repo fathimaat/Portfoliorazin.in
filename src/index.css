@@ -71,3 +71,15 @@
     background: white;
   }
 }
+
+.latex-content {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.latex-content .katex {
+  font-size: 1.1em;
+}

@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import { Download, ArrowLeft, ChevronLeft, ChevronRight, Minus, Plus } from 'lucide-react';
+import { ArrowLeft, Download, ChevronLeft, ChevronRight, Minus, Plus } from 'lucide-react';
 import { Logo } from '../components/Logo';
 
-// Set worker path to use local worker file from public directory
-pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.js';
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
 export function Resume() {
   const [numPages, setNumPages] = useState<number>(0);
@@ -32,7 +31,7 @@ export function Resume() {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-100">
+    <div className="min-h-screen bg-gray-50">
       <nav className="bg-white border-b sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <Logo />
@@ -40,7 +39,7 @@ export function Resume() {
             <a 
               href="/Razin_Rayees_Resume.pdf"
               download
-              className="flex items-center gap-2 px-4 py-2 bg-black text-white rounded-lg hover:bg-black/90 transition-colors"
+              className="flex items-center gap-2 px-4 py-2 bg-black text-white hover:bg-black/90 transition-colors"
             >
               <Download className="w-5 h-5" />
               Download
