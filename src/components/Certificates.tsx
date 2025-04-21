@@ -91,7 +91,7 @@ function CertificateProvider({ provider, logo, subtitle, courses }) {
             <p className="text-gray-400">{subtitle}</p>
           </div>
         </div>
-        <Award className={`text-cyan-400 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`} size={24} />
+        <Award className={`text-white transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`} size={24} />
       </div>
 
       {isExpanded && (
@@ -104,7 +104,7 @@ function CertificateProvider({ provider, logo, subtitle, courses }) {
           {courses.map((course, index) => (
             <div key={index} className="p-6 space-y-4">
               <div className="flex justify-between items-center">
-                <h4 className="text-cyan-400 text-xl font-medium">{course.title}</h4>
+                <h4 className="text-white text-xl font-medium">{course.title}</h4>
               </div>
               <div className="grid gap-3">
                 {course.certificates.map((cert, certIndex) => (
@@ -118,7 +118,7 @@ function CertificateProvider({ provider, logo, subtitle, courses }) {
                         href={cert.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors"
+                        className="flex items-center gap-2 text-white hover:text-white transition-colors"
                         onClick={(e) => e.stopPropagation()}
                       >
                         View
@@ -142,7 +142,7 @@ export function Certificates() {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-16">
           <h2 className="text-6xl text-white">CERTIFICATES</h2>
-          <Award size={48} className="text-cyan-400" />
+          <Award size={48} className="text-white" />
         </div>
         
         <div className="space-y-6">
