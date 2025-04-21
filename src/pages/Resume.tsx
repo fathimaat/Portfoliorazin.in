@@ -3,7 +3,8 @@ import { Document, Page, pdfjs } from 'react-pdf';
 import { Download, ArrowLeft, ChevronLeft, ChevronRight, Minus, Plus } from 'lucide-react';
 import { Logo } from '../components/Logo';
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
+// Set worker path to use local worker file from public directory
+pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.js';
 
 export function Resume() {
   const [numPages, setNumPages] = useState<number>(0);

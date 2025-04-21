@@ -14,8 +14,20 @@ function App() {
   const [dotPosition, setDotPosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
   const [isOnDarkBg, setIsOnDarkBg] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) return;
+
     const handleMouseMove = (e: MouseEvent) => {
       setCursorPosition({ x: e.clientX, y: e.clientY });
       setDotPosition({ x: e.clientX, y: e.clientY });
@@ -51,32 +63,45 @@ function App() {
       document.removeEventListener('mouseover', handleMouseOver);
       document.removeEventListener('mouseout', handleMouseOut);
     };
-  }, []);
+  }, [isMobile]);
 
-  const isResumePage = window.location.pathname === '/resume';
+  const path = window.location.pathname;
 
-  if (isResumePage) {
-    return <Resume />;
+  const CursorElements = () => (
+    !isMobile ? (
+      <>
+        <div 
+          className={`custom-cursor ${isHovering ? 'hover' : ''} ${isOnDarkBg ? 'on-dark' : ''}`}
+          style={{ 
+            left: `${cursorPosition.x}px`, 
+            top: `${cursorPosition.y}px`,
+            transform: 'translate(-50%, -50%)'
+          }}
+        />
+        <div 
+          className={`cursor-dot ${isOnDarkBg ? 'on-dark' : ''}`}
+          style={{ 
+            left: `${dotPosition.x}px`, 
+            top: `${dotPosition.y}px`,
+            transform: 'translate(-50%, -50%)'
+          }}
+        />
+      </>
+    ) : null
+  );
+
+  if (path === '/resume') {
+    return (
+      <>
+        <CursorElements />
+        <Resume />
+      </>
+    );
   }
 
   return (
     <div className="min-h-screen bg-white">
-      <div 
-        className={`custom-cursor ${isHovering ? 'hover' : ''} ${isOnDarkBg ? 'on-dark' : ''}`}
-        style={{ 
-          left: `${cursorPosition.x}px`, 
-          top: `${cursorPosition.y}px`,
-          transform: 'translate(-50%, -50%)'
-        }}
-      />
-      <div 
-        className={`cursor-dot ${isOnDarkBg ? 'on-dark' : ''}`}
-        style={{ 
-          left: `${dotPosition.x}px`, 
-          top: `${dotPosition.y}px`,
-          transform: 'translate(-50%, -50%)'
-        }}
-      />
+      <CursorElements />
       <Navigation />
       <Hero />
       <About />
