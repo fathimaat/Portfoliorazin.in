@@ -87,7 +87,7 @@ export function Contact() {
               <a href="https://linkedin.com/in/razinrayees" target="_blank" rel="noopener noreferrer">
                 <Linkedin size={24} />
               </a>
-              <a href="mailto:razinrayees@outlook.com">
+              <a href="mailto:razin@razinrayees.com">
                 <Mail size={24} />
               </a>
             </div>
