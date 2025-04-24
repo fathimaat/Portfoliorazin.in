@@ -46,7 +46,7 @@ export function Footer() {
           <div>
             <h3 className="font-['Be_Vietnam'] font-semibold text-[14px] leading-[79%] tracking-[0.165em] text-neutral-500 mb-8">CONNECT WITH ME</h3>
             <div className="flex gap-6">
-              <a href="mailto:razinrayees@outlook.com" className="hover:text-neutral-400">
+              <a href="mailto:razin@razinrayees.com" className="hover:text-neutral-400">
                 <Mail size={24} />
               </a>
               <a href="https://github.com/razinrayees" target="_blank" rel="noopener noreferrer" className="hover:text-neutral-400">

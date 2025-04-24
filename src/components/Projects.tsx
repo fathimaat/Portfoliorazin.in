@@ -21,14 +21,14 @@ const projects = [
     description: 'Building a static modern renting platform with Patch to improve credit history, rent with a deposit, and find the perfect pad',
     image: 'https://razin.imgix.net/23.png?auto=format&fit=crop&q=80',
     type: 'PROJECT',
-    link: 'https://patch.razin.in'
+    link: 'https://patch.razinrayees.com'
   },
   {
     title: 'Bitbucket',
     description: 'Building Bitbucket: More than just Git code management, providing teams a single platform to plan projects, collaborate on code, test, and deploy',
     image: 'https://razin.imgix.net/24.png?auto=format&fit=crop&q=80',
     type: 'PROJECT',
-    link: 'https://bitbucket.razin.in'
+    link: 'https://bitbucket.razinrayees.com'
   }
 ];
 
