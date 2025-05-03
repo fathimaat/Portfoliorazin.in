@@ -7,7 +7,6 @@ import { Projects } from './components/Projects';
 import { Certificates } from './components/Certificates';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
-import { Resume } from './components/Resume';
 
 function App() {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -89,15 +88,6 @@ function App() {
       </>
     ) : null
   );
-
-  if (path === '/resume') {
-    return (
-      <>
-        <CursorElements />
-        <Resume />
-      </>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-white">
