@@ -3,6 +3,13 @@ import { Github } from 'lucide-react';
 
 const projects = [
   {
+    title: "Resumin
+    description: 'A minimal, no-cost tool to create a public resume with a custom URL like resumin.link/yourname. Designed for developers, freelancers, and job seekers who want a simple way to showcase their profile online — without ads, clutter, or fees.',
+    image: 'https://razin.imgix.net/6852f631bb1f972aaa45bbd8.jpg', 
+    type: 'WEB APPLICATION',
+    link: 'https://resumin.link'
+  },
+  {
     title: "Zeba's Portfolio",
     description: 'A sleek and modern portfolio site showcasing web projects, designed for speed, responsiveness, and clarity.',
     image: 'https://razin.imgix.net/121.png', 
@@ -22,13 +29,6 @@ const projects = [
     image: 'https://razin.imgix.net/23.png?auto=format&fit=crop&q=80',
     type: 'PROJECT',
     link: 'https://patch.razinrayees.com'
-  },
-  {
-    title: 'Bitbucket',
-    description: 'Building Bitbucket: More than just Git code management, providing teams a single platform to plan projects, collaborate on code, test, and deploy',
-    image: 'https://razin.imgix.net/24.png?auto=format&fit=crop&q=80',
-    type: 'PROJECT',
-    link: 'https://bitbucket.razinrayees.com'
   }
 ];
 
