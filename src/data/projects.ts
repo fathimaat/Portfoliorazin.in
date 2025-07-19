@@ -12,7 +12,7 @@ export const projects: Project[] = [
   {
     title: "Resumin",
     description: 'A minimal, no-cost tool to create a public resume with a custom URL like resumin.link/yourname. Designed for developers, freelancers, and job seekers who want a simple way to showcase their profile online — without ads, clutter, or fees.',
-    image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1200', 
+    image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1200',
     type: 'WEB APPLICATION',
     link: 'https://resumin.link',
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Firebase'],
@@ -21,7 +21,7 @@ export const projects: Project[] = [
   {
     title: "Zeba's Portfolio",
     description: 'A sleek and modern portfolio site showcasing web projects, designed for speed, responsiveness, and clarity.',
-    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1200', 
+    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1200',
     type: 'PORTFOLIO',
     link: 'https://zebakk.web.app',
     technologies: ['React', 'CSS3', 'JavaScript'],
