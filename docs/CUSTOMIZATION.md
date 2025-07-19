@@ -103,9 +103,40 @@ The portfolio uses "Be Vietnam" font. To change:
 ## 📧 Contact Form
 
 ### Formspree Setup
-1. Create account at [Formspree.io](https://formspree.io)
-2. Get your form endpoint
-3. Update `FORMSPREE_ENDPOINT` in `src/lib/constants.ts`
+The contact form uses Formspree for handling form submissions. Here's how to set it up:
+
+1. **Create a Formspree Account**:
+   - Go to [Formspree.io](https://formspree.io)
+   - Sign up for a free account
+   - The free plan allows 50 submissions per month
+
+2. **Create a New Form**:
+   - Click "New Form" in your Formspree dashboard
+   - Give your form a name (e.g., "Portfolio Contact Form")
+   - Copy the form endpoint URL (looks like: `https://formspree.io/f/xkggnvwo`)
+
+3. **Update Your Project**:
+   ```typescript
+   // In src/lib/constants.ts
+   export const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+   ```
+
+4. **Test the Form**:
+   - Deploy your site or test locally
+   - Submit a test message through the contact form
+   - Check your email and Formspree dashboard for the submission
+
+5. **Configure Form Settings** (Optional):
+   - Set up email notifications
+   - Add spam protection
+   - Customize confirmation messages
+   - Set up autoresponders
+
+### Form Features
+- **Spam Protection**: Built-in spam filtering
+- **Email Notifications**: Get notified when someone contacts you
+- **File Uploads**: Support for file attachments (if needed)
+- **Custom Redirects**: Redirect users after form submission
 
 ### Alternative Form Services
 You can replace Formspree with:

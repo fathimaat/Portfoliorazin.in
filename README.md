@@ -90,6 +90,18 @@ This portfolio is designed to be easily customizable for your own use. See the [
 3. **Certificates**: Modify `src/data/certificates.ts`
 4. **About Section**: Edit `src/components/sections/About.tsx`
 5. **Hero Section**: Update `src/components/sections/Hero.tsx`
+6. **Contact Form**: Set up Formspree endpoint in `src/lib/constants.ts`
+
+### Contact Form Setup
+
+The portfolio includes a working contact form powered by Formspree:
+
+1. Create a free account at [Formspree.io](https://formspree.io)
+2. Create a new form and copy the endpoint URL
+3. Update `FORMSPREE_ENDPOINT` in `src/lib/constants.ts`
+4. Deploy and test your contact form
+
+See the [Customization Guide](docs/CUSTOMIZATION.md#-contact-form) for detailed setup instructions.
 
 ## 📱 Browser Support
 
