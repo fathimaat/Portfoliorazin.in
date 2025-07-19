@@ -74,17 +74,22 @@ firebase deploy
 
 ## 🎨 Customization
 
-### Colors and Styling
-- Modify `tailwind.config.js` for theme customization
-- Update global styles in `src/styles/globals.css`
+This portfolio is designed to be easily customizable for your own use. See the [Customization Guide](docs/CUSTOMIZATION.md) for detailed instructions on:
 
-### Content
-- Update personal information in component files
-- Replace project data in `src/data/projects.ts`
-- Modify certificate data in `src/data/certificates.ts`
+- **Personal Information**: Update name, bio, contact details
+- **Projects**: Add your own projects with images and descriptions
+- **Certificates**: Showcase your achievements and certifications
+- **Styling**: Customize colors, fonts, and layout
+- **Contact Form**: Set up your own contact form
+- **Deployment**: Deploy to your preferred hosting platform
 
-### Contact Form
-- Configure Formspree endpoint in `src/components/sections/Contact.tsx`
+### Quick Start Customization
+
+1. **Personal Info**: Edit `src/lib/constants.ts`
+2. **Projects**: Update `src/data/projects.ts`
+3. **Certificates**: Modify `src/data/certificates.ts`
+4. **About Section**: Edit `src/components/sections/About.tsx`
+5. **Hero Section**: Update `src/components/sections/Hero.tsx`
 
 ## 📱 Browser Support
 
